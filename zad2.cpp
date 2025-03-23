@@ -3,7 +3,7 @@
 
 bool isPerfectCube(int number) {
     int cubeRoot = round(cbrt(number));
-    return cubeRoot * cubeRoot * cubeRoot == number;
+    return cubeRoot * cubeRoot * cubeRoot == number && number >= 0;
 }
 
 int main() {
